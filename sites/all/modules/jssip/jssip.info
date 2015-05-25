@@ -1,0 +1,13 @@
+name = JsSIP
+description = SIP over WebSocket library for WebRTC
+package = JsSIP
+core = 7.x
+dependencies[] = libraries (>=2.x)
+
+
+; Information added by Drupal.org packaging script on 2014-11-06
+version = "7.x-1.0"
+core = "7.x"
+project = "jssip"
+datestamp = "1415296091"
+
