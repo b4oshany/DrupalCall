@@ -1,0 +1,17 @@
+name = JSCommunicator
+description = SIP Phone for WebRTC
+package = JSCommunicator
+core = 7.x
+dependencies[] = libraries (>=2.x)
+dependencies[] = jssip
+dependencies[] = arbiterjs
+dependencies[] = jqueryi18nproperties
+dependencies[] = fontawesome
+
+
+; Information added by Drupal.org packaging script on 2014-11-06
+version = "7.x-1.1"
+core = "7.x"
+project = "jscommunicator"
+datestamp = "1415297284"
+

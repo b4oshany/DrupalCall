@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * hook_libraries_info() implementation for the jQuery-i18n-properties
+ * library module
+ *
+ * jQuery-i18n-properties is used by some HTML5/JavaScript
+ * applications, libraries and modules to replace strings dynamically.
+ *
+ * Please download the JavaScript source file to the directory
+ *
+ *   $(DRUPAL_HOME)/libraries/jqueryi18nproperties/jquery.i18n.properties.js
+ *
+ * and manually create a VERSION file corresponding to the version
+ * in use, for example:
+ *
+ *   echo 1.0.0 > $(DRUPAL_HOME)/libraries/jqueryi18nproperties/VERSION
+ *
+ * The module is currently known to be used by version 7.x-2.x
+ * of the DruCall module - see http://drucall.org for source code
+ * and a live demonstration.
+ *
+ * @return
+ *  An associative array whose keys are internal names of libraries
+ *  and whose values are describing each library.
+ */
+function jqueryi18nproperties_libraries_info() {
+  $libraries['jqueryi18nproperties'] = array(
+    'name' => 'jQuery-i18n-properties',
+    'vendor url' => 'https://github.com/jquery-i18n-properties/jquery-i18n-properties',
+    'download url' => 'https://github.com/jquery-i18n-properties/jquery-i18n-properties/releases',
+    'version arguments' => array(
+      'file' => 'VERSION',
+      'pattern' => '@([0-9\.]+)@',
+      'lines' => 1,
+      'cols' => 8,
+    ),
+    'files' => array(
+          'js' => array(
+            'jquery.i18n.properties.js',
+      ),
+    ),
+  );
+  return $libraries;
+}
+
+
