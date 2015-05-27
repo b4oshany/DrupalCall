@@ -112,10 +112,10 @@ function drucall_call() {
     $extra_value = '';   // TODO - a shopping cart ID,
                          // order ID, customer ID or some other value
     // Example sending the Drupal session ID through SIP
-    if(!empty($user->ssid))
+    if(!empty($user->ssid)){
       $extra_value = 'drupal:ssid:' . $user->ssid;
     else
-      $extra_value = 'drupal:sid:' . $user->sid;
+      $extra_value = 'drupal:sid:' . $user->sid;}
     $extra_value_encoded = urlencode($extra_value);
     $digest_input = $cookie_value . ':' . $extra_value;
     $cookie_mac = hash_hmac ('sha1', $digest_input, $ws_cookie_secret);
