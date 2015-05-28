@@ -1,0 +1,3 @@
+[submodule "sites/all/modules/drucall"]
+	path = sites/all/modules/drucall
+	url = git@github.com:b4oshany/drucall.git
